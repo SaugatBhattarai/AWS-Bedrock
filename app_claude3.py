@@ -9,9 +9,12 @@ import streamlit as st
 
 os.environ["aws-profile"] = "aws-toolkit-local"
 region = "us-east-1" # for example, "us-east-1" or "us-west-2"
-
+AWS_ACCESS_KEY_ID = st.secrets["aws-toolkit-local"]["AWS_ACCESS_KEY_ID"] #for streamlit live
+AWS_SECRET_ACCESS_KEY = st.secrets["aws-toolkit-local"]["AWS_SECRET_ACCESS_KEY"] #for streamlit live
 
 bedrock_runtime = boto3.client(
+    aws_access_key_id=AWS_ACCESS_KEY_ID, #for streamlit live
+    aws_secret_access_key=AWS_SECRET_ACCESS_KEY, #for streamlit live
     service_name="bedrock-runtime",
     region_name=region,
 )
