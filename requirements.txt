@@ -1,0 +1,10 @@
+pandas
+plotly
+streamlit
+yfinance
+pandas-datareader
+prophet
+langchain
+boto3
+langchain-aws
+langchain-community
