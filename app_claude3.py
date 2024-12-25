@@ -58,4 +58,3 @@ if language:
 if st.button("Search"):
     response = my_chatbot(language, prompt_text)
     st.write(response)
-    st.balloons()
