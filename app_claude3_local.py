@@ -18,7 +18,7 @@ bedrock_runtime = boto3.client(
 model_id = "anthropic.claude-3-haiku-20240307-v1:0"
 
 model_kwargs =  { 
-    "max_tokens": 1024,
+    "max_tokens": 512,
     "temperature": 0.9,
 }
 
@@ -53,4 +53,3 @@ if language:
 if st.button("Search"):
     response = my_chatbot(language, prompt_text)
     st.write(response)
-    st.balloons()

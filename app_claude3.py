@@ -53,7 +53,7 @@ st.markdown("This application demonstrates the use of AWS Bedrock, Langchain, st
 language = st.sidebar.selectbox("Select a language", ["English", "Spanish", "French"])
 
 if language:
-    prompt_text = st.text_area(label="Enter your Prompt", max_chars=150)
+    prompt_text = st.text_area(label="Enter your Prompt", max_chars=100)
 
 if st.button("Search"):
     response = my_chatbot(language, prompt_text)
