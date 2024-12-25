@@ -47,7 +47,7 @@ st.title("ChatApp using Bedrock & Claude3")
 language = st.sidebar.selectbox("Select a language", ["English", "Spanish", "French"])
 
 if language:
-    prompt_text = st.text_area(label="Enter your question", max_chars=100)
+    prompt_text = st.text_area(label="Enter your Prompt", max_chars=100)
 
 if prompt_text:
     response = my_chatbot(language, prompt_text)
