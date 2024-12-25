@@ -43,12 +43,14 @@ def my_chatbot(language, prompt_text):
 
 # Streamlit app
 st.title("ChatApp using Bedrock & Claude3")
+st.markdown("This application demonstrates the use of AWS Bedrock, Langchain, streamlit and claude3 for simple chat application.")
 
 language = st.sidebar.selectbox("Select a language", ["English", "Spanish", "French"])
 
 if language:
     prompt_text = st.text_area(label="Enter your Prompt", max_chars=100)
 
-if prompt_text:
+if st.button("Search"):
     response = my_chatbot(language, prompt_text)
     st.write(response)
+    st.balloons()
