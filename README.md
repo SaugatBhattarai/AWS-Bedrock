@@ -4,6 +4,7 @@ If you want to try out here is the live link : https://aws-bedrock.streamlit.app
 
 ## Follow these step and article link below
 Step 1: Apply for access to the Foundation models.
+
 Step 2: Select the Providers
 Step 3: Select the model for your application.
 Step 4: Get the model ID from the selected model
